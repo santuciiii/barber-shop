@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Barbearia do Santa</string>
+    <string name="bem_vindo_matheus">Bem vindo, Matheus</string>
+    <string name="todos_os_servicos">Todos os servicos</string>
+    <string name="bt_agendar">AGENDAR</string>
+
+</resources>
