@@ -1,7 +1,23 @@
 <resources>
     <string name="app_name">Barbearia do Santa</string>
-    <string name="bem_vindo_matheus">Bem vindo, Matheus</string>
+    <string name="tela_bem_vindo">Bem vindo, Matheus</string>
     <string name="todos_os_servicos">Todos os servicos</string>
-    <string name="bt_agendar">AGENDAR</string>
+    <string name="bem_vindo">Bem-vindo, %1$s</string>
 
+    // Strings campos para preencher (ex: Nome, senha e etc...)
+    <string name="login_nome">Nome</string>
+    <string name="login_senha">Senha</string>
+    <string name="agendamento_barberia">Agendamento</string>
+    <string name="data_barberia">Data</string>
+    <string name="hora_barberia">Hora</string>
+    <string name="profissional_barbearia">Escolha um profissional</string>
+    <string name="agendar_barbearia">Agendar</string>
+    <string name="funcionario_barbearia_01">Matheus Santucci</string>
+    <string name="funcionario_barbearia_02">Junior da Silva</string>
+    <string name="funcionario_barbearia_03">Marcelo Oliveira</string>
+    <string name="corte_de_cabelo">Corte de cabelo</string>
+
+    // String Botoes do APP
+    <string name="button_agendar">AGENDAR</string>
+    <string name="button_login">LOGIN</string>
 </resources>

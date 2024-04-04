@@ -23,7 +23,7 @@ class Home : AppCompatActivity() {
         supportActionBar?.hide()
         val nome = intent.extras?.getString("nome")
 
-        binding.txtUsername.text = "Bem-vindo, $nome"
+        binding.txtUsername.text = getString(R.string.bem_vindo, nome)
         val recyclerViewService = binding.recyclerviewService
         recyclerViewService.layoutManager = GridLayoutManager(this, 2)
         serviceAdapter = ServiceAdapter(this, listService)

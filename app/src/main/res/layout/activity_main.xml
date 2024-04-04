@@ -8,7 +8,7 @@
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/midnightblue"
         android:gravity="center"
         android:orientation="vertical"
@@ -26,7 +26,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:src="@drawable/logobarber1" />
+            android:src="@drawable/logobarber" />
 
         <EditText
             android:id="@+id/et_nome"
@@ -37,7 +37,7 @@
             android:layout_marginEnd="40dp"
             android:background="@color/white"
             android:gravity="center"
-            android:hint="Nome"
+            android:hint="@string/login_nome"
             android:inputType="text"
             android:maxLines="1"
             android:padding="15sp" />
@@ -51,7 +51,7 @@
             android:layout_marginEnd="40dp"
             android:background="@color/white"
             android:gravity="center"
-            android:hint="Senha"
+            android:hint="@string/login_senha"
             android:inputType="text"
             android:maxLines="1"
             android:padding="15sp" />
@@ -66,7 +66,7 @@
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/alizarin"
             android:padding="15sp"
-            android:text="LOGIN"
+            android:text="@string/button_login"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"

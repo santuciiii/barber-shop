@@ -22,7 +22,7 @@ class Scheduling : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
-        val nome = intent.extras?.getString("nome").toString()
+        intent.extras?.getString("nome").toString()
 
         val datePicker = binding.datePicker
         datePicker.setOnDateChangedListener { view, year, monthOfYear, dayOfMonth ->
@@ -31,28 +31,26 @@ class Scheduling : AppCompatActivity() {
             calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
 
             var day = dayOfMonth.toString()
-            val month: String
 
             if (dayOfMonth < 10) {
                 day = "0$dayOfMonth"
             }
-            if (monthOfYear < 10) {
-                month = "" + (monthOfYear + 1)
+            val month: String = if (monthOfYear < 10) {
+                "" + (monthOfYear + 1)
 
             } else {
-                month = (monthOfYear + 1).toString()
+                (monthOfYear + 1).toString()
             }
 
             data = "$day / $month / $year"
         }
 
         binding.timePicker.setOnTimeChangedListener { view, hourOfDay, minute ->
-            val minuto: String
 
-            if (minute < 10) {
-                minuto = "0$minute"
+            val minuto: String = if (minute < 10) {
+                "0$minute"
             } else {
-                minuto = minute.toString()
+                minute.toString()
 
             }
 
